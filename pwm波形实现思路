@@ -1,0 +1,6 @@
+PSC预分频 → CNT计数器 → CCR捕获/比较 →
+PWM频率： Freq = CK_PSC / (PSC + 1) / (ARR + 1)
+CK_PSC是预分频频率，一般是系统频率。PSC是分频系数，ARR是自动重装载寄存器最大计数值。
+PWM占空比： Duty = CCR / (ARR + 1)
+CCR是输出比较输出PWM的一个限定比较值。
+PWM分辨率： Reso = 1 / (ARR + 1)
